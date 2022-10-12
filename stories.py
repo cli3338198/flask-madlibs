@@ -29,7 +29,7 @@ class Story:
 
         text = self.template
 
-        for (key, val) in answers.items():
+        for (key, val) in answers:
             text = text.replace("{" + key + "}", val)
 
         return text
